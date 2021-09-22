@@ -51,5 +51,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'ase-test-app'
-        publish-profile: $
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_964a108c417b477181b6696dafb37181 }}
         package: ./dist/test-app
